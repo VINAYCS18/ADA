@@ -1,0 +1,43 @@
+#include<stdio.h>
+
+
+void main(){
+
+	int i=0,x,T,N,K,j;
+	scanf("%d",&T);
+	int ans[T];
+
+	for(x=0;x<T;x++)
+	{
+		int check;
+		scanf("%d %d",&N,&K);
+		int a[N];
+		for(i= 0; i<N; i++)
+		{
+			scanf("%d",&a[i]);
+			
+		}
+		for(i =0;i<N;i++)
+		{
+		    check=0;
+			if(K == a[i])
+			{
+			    check=1;
+			    break;
+			}
+		}
+		if(check==1)
+		{
+		    ans[x]=1;
+		}
+		else
+		{
+		    ans[x]=-1;
+		}
+	}
+	for(j = 0;j<T;j++)
+	{
+		printf("%d\n",ans[j]);
+		
+	}
+}
