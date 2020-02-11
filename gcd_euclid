@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main(){
+	int n,m,rem;
+	scanf("enter no1 %d \n enter no2 %d",&m,&n);
+	while(n!=0){
+		rem  = m%n;
+		m =n ;
+		n = rem;
+
+	}
+	printf("%d",m);
+
+
+
+
+
+}
