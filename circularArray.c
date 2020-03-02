@@ -45,29 +45,6 @@ int binarySearch(int arr[], int low, int high, int key)
        return binarySearch(arr, (mid + 1), high, key); 
    return binarySearch(arr, low, (mid -1), key); 
 } 
-  
-
-int main() 
-{ 
-
-   int n,key;
-   printf("enter no of elements & key to be searched\n");
-	scanf("%d %d",&n,&key);
-   int arr[n]; 
-   printf("Enter array elements in sorted order\n");
-   for(int i =0;i<n;i++)
-	scanf("%d",&arr[i]);
-   printf("Index of the element is : %d",pivotedBinarySearch(arr, n, key)); 
-   return 0; 
-} 
-   int mid = (low + high)/2; 
-   if (key == arr[mid]) 
-       return mid; 
-   if (key > arr[mid]) 
-       return binarySearch(arr, (mid + 1), high, key); 
-   return binarySearch(arr, low, (mid -1), key); 
-} 
-  
 
 int main() 
 { 
