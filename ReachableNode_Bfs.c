@@ -1,5 +1,4 @@
 #include<stdio.h> 
-#include<conio.h> 
 int a[20][20],q[20],visited[20],r=-1,f=0,i,j,n; 
 void bfs(int v); 
 int main(){ 
@@ -26,7 +25,6 @@ int main(){
              if(visited[i]) 
                 printf(“%dt”,i); 
                 } 
-         getch(); 
          return(0); 
     } 
     
