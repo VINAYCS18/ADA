@@ -1,8 +1,8 @@
 #include<stdio.h> 
 
 #define INF 99999 
-void printSolution(int dist[][V]); 
-void floydWarshall (int graph[][V]) 
+void printSolution(int dist[][]); 
+void floydWarshall (int graph[][]) 
 { 
 	int dist[V][V], i, j, k; 
 
